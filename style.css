@@ -219,3 +219,253 @@ body {
 .alphabet h6:hover {
   border: 1px solid #000;
 }
+
+.page2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 2vw;
+  gap: 3vw;
+}
+
+.page2 .page2-part1 {
+  width: 60%;
+  height: 100%;
+}
+
+.page2 .page2-part1 img {
+  width: 90%;
+  height: 110%;
+  object-fit: cover;
+}
+.page2 .page2-part2 {
+  width: 60%;
+  height: 100%;
+}
+.page2 .page2-part2 img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+}
+.page2 .page2-part2 .box {
+  width: 90%;
+  height: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+.page2 .page2-part2 .box h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.page2 .page2-part2 .box p {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.shot {
+  width: 100%;
+  height: 100%;
+  padding: 3vw 4vw;
+}
+.shot h2 {
+  font-family: monument;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.shot .shot-section {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.shot .shot-section .rotate {
+  width: 60%;
+  text-align: center;
+}
+.shot .shot-section .rotate img {
+  width: 60%;
+}
+.shot .shot-section .rotate p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding-right: 4vw;
+  margin-top: 17vw;
+}
+
+.shot .shot-section .image {
+  width: 70%;
+  height: 100%;
+}
+.shot .shot-section .image img {
+  width: 90%;
+  height: 70%;
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  margin-top: 20vw;
+  padding: 1vw 4vw;
+  position: relative;
+}
+.full-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 30%;
+}
+.full-image h5 {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 1vw;
+  position: absolute;
+  top: 3vw;
+  right: 10vw;
+  color: #f8f8f8;
+  border-radius: 50%;
+  border: 1px solid #473e3e;
+  background-color: transparent;
+}
+
+.page3 {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+  padding: 5vw 4vw;
+}
+
+.page3 > h1 {
+  text-align: center;
+  font-family: monument;
+  text-transform: uppercase;
+  font-size: 3vw;
+  /* font-weight: 900; */
+  margin-bottom: 7vh;
+}
+
+.elem {
+  height: 15.5vh;
+  width: 100%;
+  /* background-color: red; */
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+
+  transition: all ease 0.7s;
+}
+
+.elem img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+  left: 12%;
+  opacity: 0;
+  object-fit: cover;
+  object-position: top;
+  transition: all ease 0.7s;
+}
+
+.elem h4 {
+  font-family: monument;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 6%;
+  /* background-color: red; */
+}
+
+.elem .elem-part2 {
+  width: 45%;
+  /* background-color: red; */
+}
+
+.elem-part2 h1 {
+  font-size: 2.7vw;
+  font-weight: 500;
+}
+
+.elem-part2 h5 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid #000;
+}
+.elem:hover {
+  background-color: #f1f1f1;
+}
+.elem:nth-last-child(1) img {
+  left: 40%;
+}
+
+.elem:nth-last-child(3) img {
+  left: 40%;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 24%;
+}
+
+.marque {
+  /* height: 15vh; */
+  width: 100%;
+  /* background-color: red; */
+  padding: 0.8vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.marque h1 {
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  letter-spacing: 3px;
+  font-family: monument;
+  /* background-color: blue; */
+  margin-right: 16px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.footer {
+  height: 10%;
+  width: 100%;
+}
